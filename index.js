@@ -68,33 +68,33 @@ const
 		mentionedJid,
 		processTime,
 	} = require("@adiwajshing/baileys")
-//=================================================//
+//===========================================================//
 prefix = '.'
 hit_today = []
 blocked = []
 banChats = false
 offline = false
-targetpc = '50373488366'
-owner = '50373488366'
-fake = 'SATANCITO ᵈᵃʳʸ⛥'
+targetpc = '5521981449242'
+owner = '5521981449242'
+fake = '☙𝐊𝐚𝐋𝐢↭𝐋𝐢𝐍𝐮𝐗❧'
 numbernye = '0'
 waktu = '-'
 alasan = '-'
-//=================================================//
+//===========================================================//
 async function starts() {
 	const pato = new WAConnection()
 	pato.logger.level = 'warn'
-	console.log('>', '[',color('INGFO','blue'),']','Menglogin kawan...')
+	console.log('>', '[',color('CHECK','green'),']','𝐂𝐡𝐞𝐜𝐚𝐧𝐝𝐨 𝐜𝐫𝐞𝐝𝐞𝐧𝐜𝐢𝐚𝐢𝐬...')
 	pato.on('qr', () => {
-	console.log(color('[','white'), color('!','red'), color(']','white'), color(' Scan the qr code above'))
+	console.log(color('[','green'), color('!','red'), color(']','green'), color(' 𝐒𝐜𝐚𝐧𝐞𝐢𝐞 𝐨 𝐜𝐨𝐝𝐢𝐠𝐨 𝐐𝐑 𝐚𝐜𝐢𝐦𝐚!'))
 	})
 
 	fs.existsSync('./session.json') && pato.loadAuthInfo('./session.json')
 	pato.on('connecting', () => {
-	console.log(color('> [ INGFO ]', 'white'), color('Connecting...'))
+	console.log(color('> [ INGFO ]', 'white'), color('Cσиєcтαиdσ...'))
 	})
 	pato.on('open', () => {
-	console.log(color('> [ INGFO ]', 'white'), color('Connected'))
+	console.log(color('> [ INGFO ]', 'white'), color('Cσиєcтαdσ'))
 	})
 		await pato.connect({timeoutMs: 30*1000})
   fs.writeFileSync('./session.json', JSON.stringify(pato.base64EncodedAuthInfo(), null, '\t'))
@@ -102,7 +102,7 @@ async function starts() {
 pato.on('CB:action,,call', async json => {
     const callerId = json[2][0][1].from;
     console.log("call dari "+ callerId)
-        pato.sendMessage(callerId, "Auto block system, don't call please", MessageType.text)
+        pato.sendMessage(callerId, "𝐒𝐢𝐬𝐭𝐞𝐦𝐚 𝐝𝐞 𝐛𝐥𝐨𝐪𝐮𝐞𝐢𝐨 𝐚𝐮𝐭𝐨𝐦𝐚𝐭𝐢𝐜𝐨, 𝐧𝐚𝐨 𝐥𝐢𝐠𝐮𝐞, 𝐩𝐨𝐫 𝐟𝐚𝐯𝐨𝐫!", MessageType.text)
         await sleep(4000)
         await pato.blockUser(callerId, "add")
 })
@@ -121,13 +121,13 @@ pato.on('CB:action,,call', async json => {
                 ini_user = pato.contacts[num]
                 ini_img = await getBuffer(`http://api.lolhuman.xyz/api/welcomeimage?apikey=${LolHuman}&img=${pp_user}&text=${ini_user.notify}`)
                 group_info = await pato.groupMetadata(anu.jid)
-                welkam = `Hola ${ini_user.notify}\n◪ Bienvenido UwU a\n├─ ${mdata.subject}\n\n└─ ❏ Numero: ${num.replace('@s.whatsapp.net', '')}\nLee las reglas y comportate y no spam con el bot, gracias UvU\n${ini_user.notify}`
+                welkam = `𝐒𝐚𝐥𝐯𝐞 ${ini_user.notify}\n◪ 𝐒𝐞𝐣𝐚 𝐛𝐞𝐦 𝐯𝐢𝐧𝐝𝐨\n├─ ${mdata.subject}\n\n└─ ❏ Numero: ${num.replace('@s.whatsapp.net', '')}\n 𝐋𝐞𝐢𝐚 𝐚𝐬 𝐫𝐞𝐠𝐫𝐚𝐬 𝐬𝐞 𝐜𝐨𝐦𝐩𝐨𝐫𝐭𝐞 𝐞 𝐧𝐚𝐨 𝐟𝐚ç𝐚 𝐬𝐩𝐚𝐦 𝐜𝐨𝐦 𝐨 𝐛𝐨𝐭!\n${ini_user.notify}`
                 pato.sendMessage(anu.jid, ini_img, MessageType.image, { caption: welkam })
             }
             if (anu.action == 'remove') {
                 ini_user = pato.contacts[num]
                 ini_img = await getBuffer(`http://api.lolhuman.xyz/api/welcomeimage?apikey=${LolHuman}&img=${pp_user}&text=${ini_user.notify}`)
-                out = `◪ chao ${ini_user.notify}\n◪ se fue de:\n${mdata.subject}\n│\n└─ ❏ Numero: ${num.replace('@s.whatsapp.net', '')}\nPor puto Ojala no vuelva UnU~~`
+                out = `◪ 𝐓𝐜𝐡𝐚𝐮 ${ini_user.notify}\n◪ 𝐒𝐚𝐢𝐮 𝐩𝐨𝐫𝐪𝐮𝐞 𝐪𝐮𝐢𝐬 \n${mdata.subject}\n│\n└─ ❏ Numero: ${num.replace('@s.whatsapp.net', '')}\n𝐒𝐞 𝐬𝐚𝐢𝐮 𝐧𝐚 𝐯𝐚𝐜𝐢𝐥𝐚ç𝐚𝐨 𝐞𝐬𝐩𝐞𝐫𝐨 𝐪𝐮𝐞 𝐧𝐚𝐨 𝐯𝐨𝐥𝐭𝐞!`
                 pato.sendMessage(anu.jid, ini_img, MessageType.image, { caption: out })
             }
 		} catch (e) {
@@ -158,7 +158,7 @@ pato.on('chat-update', async (mek) => {
 		const q = args.join(' ')
 		//const meNumber = pato.user.jid.split("@")[0]
 		const botNumber = pato.user.jid
-		const ownerNumber = ['50373488366@s.whatsapp.net'] //Satan owner
+		const ownerNumber = ['5521981449242@s.whatsapp.net']        //Dono do BoT
 //SETTING WeA
 		const isGroup = from.endsWith('@g.us')
 		const sender = isGroup ? mek.participant : mek.key.remoteJid
@@ -182,17 +182,17 @@ pato.on('chat-update', async (mek) => {
         //MESS
         
 		mess = {
-			wait: 'Ten paciencia soy lenta TwY',
-			success: 'Oki doki ^w^',
-			wrongFormat: 'Formato incorrecto, intenta denuevo UwU',
+			wait: '𝐒𝐞𝐣𝐚 𝐩𝐚𝐜𝐢𝐞𝐧𝐭𝐞, 𝐭𝐮𝐝𝐨 𝐧𝐨 𝐬𝐞𝐮 𝐭𝐞𝐦𝐩𝐨!',
+			success: '𝐒𝐮𝐜𝐞𝐬𝐬𝐨!',
+			wrongFormat: '𝐅𝐨𝐫𝐦𝐚𝐭𝐨 𝐞𝐫𝐫𝐚𝐝𝐨, 𝐭𝐞𝐧𝐭𝐞 𝐧𝐨𝐯𝐚𝐦𝐞𝐧𝐭𝐞!',
 			error: {
-				stick: 'No pude convertirlo, perdon T~T',
-				Iv: 'Y ese link funciona? U.U'
+				stick: '𝐍𝐚𝐨 𝐜𝐨𝐧𝐬𝐞𝐠𝐮𝐢 𝐜𝐨𝐧𝐯𝐞𝐫𝐭𝐞𝐫, 𝐝𝐞𝐬𝐜𝐮𝐥𝐩𝐞!',
+				Iv: '𝐄 𝐞𝐬𝐬𝐞 𝐥𝐢𝐧𝐤 𝐟𝐮𝐧𝐜𝐢𝐨𝐧𝐚?'
 			},
 			only: {
-				group: 'Solo en grupos ÙnÚ',
-				admin: 'Solo los admins UvU',
-				Badmin: 'No soy una admin T-T'
+				group: '𝐀𝐩𝐞𝐧𝐚𝐬 𝐞𝐦 𝐠𝐫𝐮𝐩𝐨𝐬!',
+				admin: '𝐀𝐩𝐞𝐧𝐚𝐬 𝐚𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐝𝐨𝐫𝐞𝐬!',
+				Badmin: '𝐍𝐚𝐨 𝐬𝐨𝐮 𝐮𝐦 𝐚𝐝𝐦𝐢𝐧𝐢𝐬𝐭𝐫𝐚𝐝𝐨𝐫!'
 			}
 		}
 		const isUrl = (url) => {
@@ -220,7 +220,7 @@ fromMe: false,
  },
 message: {
  'contactMessage': {
- 'displayName': `Hola ${pushname}`,
+ 'displayName': `𝐒𝐚𝐥𝐯𝐞 ${pushname}`,
 'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;${ucapanWaktu},;;;\nFN:${ucapanWaktu},\nitem1.TEL;waid=${sender.split('@')[0]}:${sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
  'jpegThumbnail': fs.readFileSync('./stik/thumb.jpeg')
 }
@@ -246,7 +246,7 @@ message: {
                         "imageMessage": {
                             "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc",
                             "mimetype": "image/jpeg",
-                            "caption": `Holi cosita ^-^${pushname}`,
+                            "caption": `ㅤ𝐒𝐚𝐥𝐯𝐞➛ㅤ${pushname}`,
                             "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=",
                             "fileLength": "28777",
                             "height": 1080,
@@ -276,7 +276,7 @@ message: {
                         "imageMessage": {
                             "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc",
                             "mimetype": "image/jpeg",
-                            "caption": `Holi cosita UwU ${pushname}`,
+                            "caption": `ㅤ𝐒𝐚𝐥𝐯𝐞↠ㅤ${pushname}`,
                             "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=",
                             "fileLength": "28777",
                             "height": 1080,
@@ -305,7 +305,7 @@ participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: 'status@broadcast' } : 
 'mimetype': 'image/jpeg',
  'jpegThumbnail': fs.readFileSync('./stik/thumb.jpeg')
 },
-'title': `Hola cosita UwU${pushname}`,
+'title': `ㅤ𝐒𝐚𝐥𝐯𝐞⇝ㅤ${pushname}`,
 'productImageCount': 9999
 },
 'businessOwnerJid': `0@s.whatsapp.net`
@@ -397,7 +397,7 @@ const faketokoforwaded = (teks) => {
             if (isAfk(mek.key.remoteJid)) return
             addafk(mek.key.remoteJid)
             heheh = ms(Date.now() - waktu) 
-            pato.sendMessage(mek.key.remoteJid,`@${owner} Sedang Offline!\n\n*Alasan :* ${alasan}\n*Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik lalu\n\nSilahkan Hubungi Lagi Nanti`, MessageType.text,{contextInfo:{ mentionedJid: [`${owner}@s.whatsapp.net`],'stanzaId': "B826873620DD5947E683E3ABE663F263", 'participant': "0@s.whatsapp.net", 'remoteJid': 'status@broadcast', 'quotedMessage': {"imageMessage": {"caption": "*OFFLINE*", 'jpegThumbnail': fs.readFileSync('./stik/thumb.jpeg')}}}})
+            pato.sendMessage(mek.key.remoteJid,`@${owner} 𝐀𝐭𝐮𝐚𝐥𝐦𝐞𝐧𝐭𝐞 𝐨𝐟𝐟𝐥𝐢𝐧𝐞!\n\n*𝐑𝐚𝐳𝐚𝐨 :* ${alasan}\n* 𝐃𝐞𝐬𝐝𝐞 𝐚 :* ${heheh.hours} 𝐇𝐨𝐫𝐚, ${heheh.minutes} 𝐌𝐢𝐧𝐮𝐭𝐨, ${heheh.seconds} 𝐒𝐞𝐠𝐮𝐧𝐝𝐨𝐬 𝐚𝐭𝐫𝐚𝐬\n\n𝐄𝐧𝐭𝐫𝐞 𝐞𝐦 𝐜𝐨𝐧𝐭𝐚𝐭𝐨 𝐧𝐨𝐯𝐚𝐦𝐞𝐧𝐭𝐞 𝐦𝐚𝐢𝐬 𝐭𝐚𝐫𝐝𝐞`, MessageType.text,{contextInfo:{ mentionedJid: [`${owner}@s.whatsapp.net`],'stanzaId': "B826873620DD5947E683E3ABE663F263", 'participant': "0@s.whatsapp.net", 'remoteJid': 'status@broadcast', 'quotedMessage': {"imageMessage": {"caption": "*OFFLINE*", 'jpegThumbnail': fs.readFileSync('./stik/thumb.jpeg')}}}})
             }
             }   
         if (mek.key.remoteJid.endsWith('@g.us') && offline) {
@@ -410,7 +410,7 @@ const faketokoforwaded = (teks) => {
         if (isAfk(mek.key.remoteJid)) return
         addafk(mek.key.remoteJid)
         heheh = ms(Date.now() - waktu)
-        pato.sendMessage(mek.key.remoteJid,`@${owner} Sedang Offline!\n\n *Alasan :* ${alasan}\n *Sejak :* ${heheh.hours} Jam, ${heheh.minutes} Menit, ${heheh.seconds} Detik lalu\n\nSilahkan Hubungi Lagi Nanti`, MessageType.text,{contextInfo:{ mentionedJid: [`${owner}@s.whatsapp.net`],'stanzaId': "B826873620DD5947E683E3ABE663F263", 'participant': "0@s.whatsapp.net", 'remoteJid': 'status@broadcast', 'quotedMessage': {"imageMessage": {"caption": "*OFFLINE*", 'jpegThumbnail': fs.readFileSync('./stik/thumb.jpeg')}}}})
+        pato.sendMessage(mek.key.remoteJid,`@${owner} 𝐀𝐭𝐮𝐚𝐥𝐦𝐞𝐧𝐭𝐞 𝐨𝐟𝐟𝐥𝐢𝐧𝐞!\n\n *𝐑𝐚𝐳𝐚𝐨 :* ${alasan}\n * 𝐃𝐞𝐬𝐝𝐞 𝐚 :* ${heheh.hours} 𝐇𝐨𝐫𝐚, ${heheh.minutes} 𝐌𝐢𝐧𝐮𝐭𝐨, ${heheh.seconds} 𝐒𝐞𝐠𝐮𝐧𝐝𝐨𝐬 𝐚𝐭𝐫𝐚𝐬\n\n𝐄𝐧𝐭𝐫𝐞 𝐞𝐦 𝐜𝐨𝐧𝐭𝐚𝐭𝐨 𝐧𝐨𝐯𝐚𝐦𝐞𝐧𝐭𝐞 𝐦𝐚𝐢𝐬 𝐭𝐚𝐫𝐝𝐞`, MessageType.text,{contextInfo:{ mentionedJid: [`${owner}@s.whatsapp.net`],'stanzaId': "B826873620DD5947E683E3ABE663F263", 'participant': "0@s.whatsapp.net", 'remoteJid': 'status@broadcast', 'quotedMessage': {"imageMessage": {"caption": "*OFFLINE*", 'jpegThumbnail': fs.readFileSync('./stik/thumb.jpeg')}}}})
           }
         }
             }
@@ -567,7 +567,7 @@ const getLevelingXp = (sender) => {
    	     }
    //Function Level Up
 const levelup = (pushname, sender, getLevelingXp,  getLevel, getLevelingLevel, role) => {
-	fakekontak(`\n*「 FELICIDADES 」*\n┌ *Nombre* : ${pushname}\n├ *Número* : wa.me/${sender.split("@")[0]}\n├  *Xp* : ${getLevelingXp(sender)}\n├ *Rol*: ${role}\n└  *Nivel* : ${getLevel} ⊱ ${getLevelingLevel(sender)}`)
+	fakekontak(`\nㅤㅤㅤㅤ↶𝐹𝐸𝐿𝐼𝒞𝐼𝒟𝒜𝒟𝐸𝒮↷ \nㅤㅤ𝒩𝑜𝑚𝑒 : ${pushname}\nㅤㅤ𝒩𝑢𝑚𝑒𝑟𝑜 : wa.me/${sender.split("@")[0]}\nㅤㅤ𝒳𝒫 : ${getLevelingXp(sender)}\nㅤㅤ𝑅𝑜𝑙 : ${role}\nㅤㅤ𝒩𝑖𝑣𝑒𝑙 : ${getLevel} ⊱ ${getLevelingLevel(sender)}`)
 }
 //Function Level
             if (isGroup) {
@@ -638,51 +638,46 @@ switch (command) {
     runtem = `${kyun(anu)}`
 //
     var menu = `  
-                SATANCITO ᵈᵃʳʸ⛥
-    
-Blackpink  -  How you like that 
-01:52 ━━━●───── 03:08
-     ⇆ㅤㅤ ◁ㅤ ❚❚ㅤ ▷ㅤ ㅤ↻﻿
-                  ılıılıılıılıılıılı
-ᴠᴏʟᴜᴍᴇ : ▮▮▮▮▮▮▮▯▯▯ 
+                ☙𝐊𝐚𝐋𝐢↭𝐋𝐢𝐍𝐮𝐗❧
+             ꧁𝘉𝘰𝘛⇝☠⇜𝘏𝘊𝘉𝘙꧂
 
-- *Hits de hoy : ${hit_today.length}*
-- *Celular :* ${device_manufacturer}
-- *Modelo :* ${device_model}
-- *RAM :* ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-- *Android :* ${os_version}
-- *Versión de WhatsApp* : ${wa_version}
--  *Grupos :* ${giid.length}
-- *Chats :* ${totalchat.length - giid.length}
-- *Total de chat :* ${totalchat.length}
-- *Velocidad :* ${sepid.toFixed(4)} Second
-- *Mi tiempo vivo:* ${runtem}
-- Prefix : 「 ${prefix} 」
+ㅤㅤHits de hoje : ${hit_today.length}
+ㅤㅤCelular : ${device_manufacturer}
+ㅤㅤModelo : ${device_model}
+ㅤㅤRAM : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+ㅤㅤAndroid : ${os_version}
+ㅤㅤVersão do WhatsApp : ${wa_version}
+ㅤㅤGrupos : ${giid.length}
+ㅤㅤChats : ${totalchat.length - giid.length}
+ㅤㅤTotal de chat : ${totalchat.length}
+ㅤㅤVelocidade : ${sepid.toFixed(4)}ㅤMilissegundos
+ㅤㅤMeu tempo de atividade: ${runtem}
+ㅤㅤPrefix : 「 ${prefix} 」
 
-Grupo oficial : https://chat.whatsapp.com/J72bXsh3gRxKufBl8iikDO
 
-╭─Comandos UwU 
-├ *${prefix}off*
-├ *${prefix}on*
-├ *${prefix}status*
-├ *${prefix}self*
-├ *${prefix}public*
-├ *${prefix}peson*
-├ *${prefix}pesoff*
-├ *${prefix}spam*
-├ *${prefix}mute*
-├ *${prefix}unmute*
-├ *${prefix}delete*
-├ *${prefix}setfake*
-├ *${prefix}welcome 1/0*
-├ *${prefix}setfakeimg*
-├ *${prefix}setprefix*
-├ *${prefix}setthumb*
-├ *${prefix}settarget*
-├ *${prefix}covidindo*
-├ *${prefix}covidworld*
-├ *${prefix}cnn*
-├ *${prefix}infogempa*
+
+╭──➛ㅤ𝕄𝕖𝕟𝕦 
+├ㅤㅤ${prefix}off
+├ㅤㅤ${prefix}on
+├ㅤㅤ${prefix}status
+├ㅤㅤ${prefix}self
+├ㅤㅤ${prefix}public
+├ㅤㅤ${prefix}peson
+├ㅤㅤ${prefix}pesoff
+├ *${prefix}spam
+├ *${prefix}mute
+├ *${prefix}unmute
+├ *${prefix}delete
+├ *${prefix}setfake
+├ *${prefix}welcome 1/0
+├ *${prefix}setfakeimg
+├ *${prefix}setprefix
+├ *${prefix}setthumb
+├ *${prefix}settarget
+├ *${prefix}covidindo
+├ *${prefix}covidworld
+├ *${prefix}cnn
+├ *${prefix}infogempa
 ├ *${prefix}get* [ google.com ]
 ├ *${prefix}revip* [ 8.8.8.8 ]
 ├ *${prefix}avatar*
@@ -742,12 +737,10 @@ Grupo oficial : https://chat.whatsapp.com/J72bXsh3gRxKufBl8iikDO
 ├ *${prefix}term* [ code ]
 ├ *${prefix}runtime*
 ├ *${prefix}speed*
-╰─ SATANCITO ᵈᵃʳʸ⛥ 
-√Eli.Hopeˢᵃᵗᵃⁿ💞
-√Satancitoᵈᵃʳʸ💞
-√Daricitaˢᵃᵗᵃⁿ💖
-√Mr.Patitoᵉᵛᵒˡᵉᵗ🦆
-√Felixcitoᵇʳⁱ🌚
+╰─ ☙𝐊𝐚𝐋𝐢↭𝐋𝐢𝐍𝐮𝐗❧
+ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+꧁𝘉𝘰𝘛⇝☠⇜𝘏𝘊𝘉𝘙꧂
+
 `
         	faketokoforwaded(menu)
            	break
