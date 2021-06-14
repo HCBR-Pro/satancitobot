@@ -327,7 +327,7 @@ const faketokoforwaded = (teks) => {
 						"mimetype": "image/jpeg",
 						"jpegThumbnail": fs.readFileSync(`./stik/thumb.jpeg`)
 					},
-					"title": `Holi cosita UwU ${pushname}, ${ucapanWaktu}`,
+					"title": `ㅤ𝐒𝐚𝐥𝐯𝐞 ${pushname}, ${ucapanWaktu}`,
 					"retailerId": "Self Bot",
 					"productImageCount": 1
 				},
@@ -639,107 +639,110 @@ switch (command) {
 //
     var menu = `  
                 ☙𝐊𝐚𝐋𝐢↭𝐋𝐢𝐍𝐮𝐗❧
-             ꧁𝘉𝘰𝘛⇝☠⇜𝘏𝘊𝘉𝘙꧂
+ㅤㅤㅤㅤㅤㅤ   ↶»𝘉𝘰𝘛⇝☠⇜𝘏𝘊𝘉𝘙«↷
 
-ㅤㅤHits de hoje : ${hit_today.length}
-ㅤㅤCelular : ${device_manufacturer}
-ㅤㅤModelo : ${device_model}
-ㅤㅤRAM : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-ㅤㅤAndroid : ${os_version}
-ㅤㅤVersão do WhatsApp : ${wa_version}
-ㅤㅤGrupos : ${giid.length}
-ㅤㅤChats : ${totalchat.length - giid.length}
-ㅤㅤTotal de chat : ${totalchat.length}
-ㅤㅤVelocidade : ${sepid.toFixed(4)}ㅤMilissegundos
-ㅤㅤMeu tempo de atividade: ${runtem}
-ㅤㅤPrefix : 「 ${prefix} 」
+╔═════ 𝔻𝕚𝕤𝕡𝕠𝕤𝕚𝕥𝕚𝕧𝕠 
+║ㅤ➛Hits de hoje : ${hit_today.length}
+║ㅤ➛Celular : ${device_manufacturer}
+║ㅤ➛Modelo : ${device_model}
+║ㅤ➛RAM : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+║ㅤ➛Android : ${os_version}
+║ㅤ➛Versão do WhatsApp : ${wa_version}
+║ㅤ➛Grupos : ${giid.length}
+║ㅤ➛Chats : ${totalchat.length - giid.length}
+║ㅤ➛Total de chat : ${totalchat.length}
+║ㅤ➛Velocidade : ${sepid.toFixed(4)}ㅤMilissegundos
+║ㅤ➛Meu tempo de atividade: ${runtem}
+║ㅤ➛Prefix : 「 ${prefix} 」
+╚═══════.✵.═══════╝
 
-
-
-╭──➛ㅤ𝕄𝕖𝕟𝕦 
-├ㅤㅤ${prefix}off
-├ㅤㅤ${prefix}on
-├ㅤㅤ${prefix}status
-├ㅤㅤ${prefix}self
-├ㅤㅤ${prefix}public
-├ㅤㅤ${prefix}peson
-├ㅤㅤ${prefix}pesoff
-├ *${prefix}spam
-├ *${prefix}mute
-├ *${prefix}unmute
-├ *${prefix}delete
-├ *${prefix}setfake
-├ *${prefix}welcome 1/0
-├ *${prefix}setfakeimg
-├ *${prefix}setprefix
-├ *${prefix}setthumb
-├ *${prefix}settarget
-├ *${prefix}covidindo
-├ *${prefix}covidworld
-├ *${prefix}cnn
-├ *${prefix}infogempa
-├ *${prefix}get* [ google.com ]
-├ *${prefix}revip* [ 8.8.8.8 ]
-├ *${prefix}avatar*
-├ *${prefix}loli*
-├ *${prefix}waifu*
-├ *${prefix}husbu*
-├ *${prefix}image* [ random ]
-├ *${prefix}pinterest* [ random ]
-├ *${prefix}anime* [ random ]
-├ *${prefix}wallpaperanime*
-├ *${prefix}nsfwavatar* 
-├ *${prefix}nekopoi*  
-├ *${prefix}hentai* 
-├ *${prefix}sticker* [ image > sticker]
-├ *${prefix}swm* [ author|packname ]
-├ *${prefix}take* [ author|packname ]
-├ *${prefix}fdeface*
-├ *${prefix}emoji*
-├ *${prefix}attp*
-├ *${prefix}toimg* [ sticker > image ]
-├ *${prefix}tovid* [ sticker > video]
-├ *${prefix}tomp3* [ sticker > mp3]
-├ *${prefix}slow* [ video > slow ]
-├ *${prefix}fast* [ video > fast ]
-├ *${prefix}reverse* [ video > reverse ]
-├ *${prefix}tourl* [ image > url]
-├ *${prefix}upswteks*
-├ *${prefix}upswimage*
-├ *${prefix}upswvideo*
-├ *${prefix}herolist*
-├ *${prefix}herodetail* [ Barats ]
-├ *${prefix}igstalk* [username]
-├ *${prefix}ig* [ link ] 
-├ *${prefix}play* [ query ] 
-├ *${prefix}video* [ query ] 
-├ *${prefix}ytmp3* [ link ] 
-├ *${prefix}ytmp4* [ link ] 
-├ *${prefix}ytsearch* [ query ] 
-├ *${prefix}twitter* [ link ] 
-├ *${prefix}tiktok* [ link ] 
-├ *${prefix}tiktokaudio* [ link ] 
-├ *${prefix}fb* [ link ] 
-├ *${prefix}tiktokaudio* [ query ] 
-├ *${prefix}brainly* [ query ] 
-├ *${prefix}add* [ 503xxxx ]
-├ *${prefix}kick* [ tag ]
-├ *${prefix}promote* [ tag member ]
-├ *${prefix}demote* [ tag admin ]
-├ *${prefix}kontak* [ 628xx|aku ]
-├ *${prefix}hidetag* [ your message ]
-├ *${prefix}sticktag* [ sticker > tag ]
-├ *${prefix}giftag* [ gif > tag ]
-├ *${prefix}doctag* [ document > tag ]
-├ *${prefix}kontag* [ 687xx|aku > tag ]
-├ *${prefix}totag* [ media > tag ]
-├ *${prefix}ping*
-├ *${prefix}term* [ code ]
-├ *${prefix}runtime*
-├ *${prefix}speed*
-╰─ ☙𝐊𝐚𝐋𝐢↭𝐋𝐢𝐍𝐮𝐗❧
+╭────➛𝕄𝕖𝕟𝕦 
+┃
+├⇝ㅤ${prefix}off
+├⇝ㅤ${prefix}on
+├⇝ㅤ${prefix}status
+├⇝ㅤ${prefix}dono
+├⇝ㅤ${prefix}self
+├⇝ㅤ${prefix}public
+├⇝ㅤ${prefix}peson
+├⇝ㅤ${prefix}pesoff
+├⇝ㅤ${prefix}spam
+├⇝ㅤ${prefix}mute
+├⇝ㅤ${prefix}unmute
+├⇝ㅤ${prefix}delete
+├⇝ㅤ${prefix}setfake
+├⇝ㅤ${prefix}welcome 1/0
+├⇝ㅤ${prefix}setfakeimg
+├⇝ㅤ${prefix}setprefix
+├⇝ㅤ${prefix}setthumb
+├⇝ㅤ${prefix}settarget
+├⇝ㅤ${prefix}covidindo
+├⇝ㅤ${prefix}covidworld
+├⇝ㅤ${prefix}cnn
+├⇝ㅤ${prefix}infogempa
+├⇝ㅤ${prefix}get [ᵍᵒᵒᵍˡᵉ.ᶜᵒᵐ]
+├⇝ㅤ${prefix}revip [ 8.8.8.8 ]
+├⇝ㅤ${prefix}avatar
+├⇝ㅤ${prefix}loli
+├⇝ㅤ${prefix}waifu
+├⇝ㅤ${prefix}husbu
+├⇝ㅤ${prefix}image [ᵃˡᵉᵃᵗᵒʳⁱᵃ]
+├⇝ㅤ${prefix}pinterest [ᵃˡᵉᵃᵗᵒʳⁱᵃ]
+├⇝ㅤ${prefix}anime [ᵃˡᵉᵃᵗᵒʳⁱᵃ]
+├⇝ㅤ${prefix}wallpaperanime
+├⇝ㅤ${prefix}nsfwavatar 
+├⇝ㅤ${prefix}nekopoi  
+├⇝ㅤ${prefix}hentai 
+├⇝ㅤ${prefix}sticker [ⁱᵐᵃᵍᵉ>ᵃᵈᵉˢⁱᵛᵒ]
+├⇝ㅤ${prefix}swm [ⁿᵒᵐᵉ ᵈᵒ ᵖᵃᶜᵒᵗᵉ]
+├⇝ㅤ${prefix}take [ⁿᵒᵐᵉ ᵈᵒ ᵖᵃᶜᵒᵗᵉ]
+├⇝ㅤ${prefix}fdeface
+├⇝ㅤ${prefix}emoji
+├⇝ㅤ${prefix}attp
+├⇝ㅤ${prefix}toimg [ᵃᵈᵉˢⁱᵛᵒ>ⁱᵐᵃᵍᵉ]
+├⇝ㅤ${prefix}tovid [ᵃᵈᵉˢⁱᵛᵒ>ᵛⁱᵈᵉᵒ]
+├⇝ㅤ${prefix}tomp3 [ᵃᵈᵉˢⁱᵛᵒ>ᵐᵖ3]
+├⇝ㅤ${prefix}slow [ᵛⁱᵈᵉᵒ>ˡᵉⁿᵗᵒ]
+├⇝ㅤ${prefix}fast [ᵛⁱᵈᵉᵒ>ʳᵃᵖⁱᵈᵒ]
+├⇝ㅤ${prefix}reverse [ᵛⁱᵈᵉᵒ>ʳᵉᵛᵉʳˢᵒ]
+├⇝ㅤ${prefix}tourl [ⁱᵐᵃᵍᵉ>ᵘʳˡ]
+├⇝ㅤ${prefix}upswteks
+├⇝ㅤ${prefix}upswimage
+├⇝ㅤ${prefix}upswvideo
+├⇝ㅤ${prefix}herolist
+├⇝ㅤ${prefix}herodetail [ᵇᵃʳᵃᵗᵒ]
+├⇝ㅤ${prefix}igstalk [ⁿᵒᵐᵉᵈᵒᵘˢᵘᵃʳⁱᵒ]
+├⇝ㅤ${prefix}ig [ˡⁱⁿᵏ] 
+├⇝ㅤ${prefix}play [ⁱⁿˢᵉʳⁱʳ] 
+├⇝ㅤ${prefix}video [ⁱⁿˢᵉʳⁱʳ] 
+├⇝ㅤ${prefix}ytmp3 [ˡⁱⁿᵏ] 
+├⇝ㅤ${prefix}ytmp4 [ˡⁱⁿᵏ] 
+├⇝ㅤ${prefix}ytsearch [ⁱⁿˢᵉʳⁱʳ] 
+├⇝ㅤ${prefix}twitter [ˡⁱⁿᵏ] 
+├⇝ㅤ${prefix}tiktok [ˡⁱⁿᵏ] 
+├⇝ㅤ${prefix}tiktokaudio [ˡⁱⁿᵏ] 
+├⇝ㅤ${prefix}fb [ˡⁱⁿᵏ] 
+├⇝ㅤ${prefix}tiktokaudio [ⁱⁿˢᵉʳⁱʳ] 
+├⇝ㅤ${prefix}brainly [ⁱⁿˢᵉʳⁱʳ] 
+├⇝ㅤ${prefix}add [5521xxxxx-xxxx]
+├⇝ㅤ${prefix}kick [ᵐᵃʳᶜᵃʳ]
+├⇝ㅤ${prefix}promote [ᵐᵃʳᶜᵃʳ ᵐᵉᵐᵇʳᵒ]
+├⇝ㅤ${prefix}demote [ᵐᵃʳᶜᵃʳ ᵃᵈᵐⁱⁿ]
+├⇝ㅤ${prefix}kontak [628xxᵉᵘ]
+├⇝ㅤ${prefix}hidetag [ˢᵘᵃ ᵐᵉⁿˢᵃᵍᵉᵐ]
+├⇝ㅤ${prefix}sticktag [ᵃᵈᵉˢⁱᵛᵒ>ᵐᵃʳᶜᵃʳ]
+├⇝ㅤ${prefix}giftag [ᵍⁱᶠ>ᵐᵃʳᶜᵃʳ]
+├⇝ㅤ${prefix}doctag [ᵈᵒᶜᵘᵐᵉⁿᵗᵒ>ᵐᵃʳᶜᵃʳ]
+├⇝ㅤ${prefix}kontag [687xxᵉᵘ>ᵐᵃʳᶜᵃʳ]
+├⇝ㅤ${prefix}totag [ᵐⁱᵈⁱᵃ>ᵐᵃʳᶜᵃʳ]
+├⇝ㅤ${prefix}ping
+├⇝ㅤ${prefix}term [ᶜᵒᵈⁱᵍᵒ]
+├⇝ㅤ${prefix}runtime
+├⇝ㅤ${prefix}speed
+┃
+╰─ ☙𝐊𝐚𝐋𝐢↭𝐋𝐢𝐍𝐮𝐗❧─
 ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
-꧁𝘉𝘰𝘛⇝☠⇜𝘏𝘊𝘉𝘙꧂
+↶»𝘉𝘰𝘛⇝☠⇜𝘏𝘊𝘉𝘙«↷          
 
 `
         	faketokoforwaded(menu)
@@ -747,7 +750,7 @@ switch (command) {
     case prefix+ 'on':
             if (!mek.key.fromMe) return 
             offline = false
-            fakestatus('En linea :D')
+            fakestatus(' 𝐎𝐍𝐋𝐈𝐍𝐄 ')
             break       
     case prefix+ 'off':
             if (!mek.key.fromMe) return 
@@ -755,26 +758,26 @@ switch (command) {
             waktu = Date.now()
             anuu = args.join(' ') ? args.join(' ') : '-'
             alasan = anuu
-            fakestatus(' Apagado UvU ')
+            fakestatus(' 𝐃𝐞𝐬𝐥𝐢𝐠𝐚𝐝𝐨 ')
             break
     case prefix+ 'status':
-            fakestatus(`*STATUS*\n${offline ? '> OFFLINE' : '> ONLINE'}\n${banChats ? '> SELF-MODE' : '> PUBLIC-MODE'}`)
+            fakestatus(` 𝐒𝐓𝐀𝐓𝐔𝐒 \n${offline ? '> OFFLINE' : '> ONLINE'}\n${banChats ? '> SELF-MODE' : '> PUBLIC-MODE'}`)
             break
 	case prefix+ 'self':
-          	if (!mek.key.fromMe) return fakestatus('No eres mi dueño UnU')
+          	if (!mek.key.fromMe) return fakestatus(' 𝐕𝐨𝐜𝐞 𝐧𝐚𝐨 𝐞 𝐦𝐞𝐮 𝐝𝐨𝐧𝐨 !')
           	if (banChats === true) return
           	uptime = process.uptime()
          	 // var taged = ben.message.extendedTextMessage.contextInfo.mentionedJid[0]
          	banChats = true
-          	fakestatus(`「 *Privado UwU* 」`)
+          	fakestatus(`「 𝐏𝐫𝐢𝐯𝐚𝐝𝐨 」`)
           	break
  //Set Owner For gc
     case prefix+ 'public':
-          	if (!mek.key.fromMe) return fakestatus('No eres mi dueño UnU')
+          	if (!mek.key.fromMe) return fakestatus(' 𝐕𝐨𝐜𝐞 𝐧𝐚𝐨 𝐞 𝐦𝐞𝐮 𝐝𝐨𝐧𝐨 !')
           	if (banChats === false) return
           	// var taged = ben.message.extendedTextMessage.contextInfo.mentionedJid[0]
           	banChats = false
-          	fakestatus(`「 *PUBLICO OwO* 」`)
+          	fakestatus(`「 𝑃𝑈𝐵𝐿𝐼𝐶𝑂 」`)
           	break
 					case prefix+ 'peson':
 					  pato.toggleDisappearingMessages(from, WA_DEFAULT_EPHEMERAL)
@@ -783,75 +786,75 @@ switch (command) {
 					    pato.toggleDisappearingMessages(from, 0)
 					    break
             case prefix+ 'spam':
-                if (!isMe) return reply('No eres mi dueño UnU')
-                if (!arg) return reply(`Penggunaan ${prefix}spam teks|jumlahspam`)
+                if (!isMe) return reply(' 𝐕𝐨𝐜𝐞 𝐧𝐚𝐨 𝐞 𝐦𝐞𝐮 𝐝𝐨𝐧𝐨 !')
+                if (!arg) return reply(` 𝐔𝐬𝐚𝐫 ${prefix}𝐒𝐩𝐚𝐦 𝐭𝐞𝐱𝐭𝐨|𝐪𝐮𝐚𝐧𝐭𝐢𝐝𝐚𝐝𝐞 𝐝𝐞 𝐬𝐩𝐚𝐦`)
                 argz = arg.split("|")
-                if (!argz) return reply(`Penggunaan ${prefix}spam teks|jumlah`)
-                if (isNaN(argz[1])) return reply(`harus berupa angka`)
+                if (!argz) return reply(` 𝐔𝐬𝐚𝐫 ${prefix}𝐒𝐩𝐚𝐦 𝐭𝐞𝐱𝐭𝐨|𝐪𝐮𝐚𝐧𝐭𝐢𝐝𝐚𝐝𝐞 𝐝𝐞 𝐬𝐩𝐚𝐦`)
+                if (isNaN(argz[1])) return reply(` 𝐝𝐞𝐯𝐞 𝐬𝐞𝐫 𝐮𝐦 𝐧𝐮𝐦𝐞𝐫𝐨𝐬 `)
                 for (let i = 0; i < argz[1]; i++){
                 pato.sendMessage(from, argz[0], MessageType.text, {sendEphemeral: true})
                 }
 	        break
              case prefix+ 'mute':
-                if (!isMe) return reply('No eres mi dueño UnU')
+                if (!isMe) return reply(' 𝐕𝐨𝐜𝐞 𝐧𝐚𝐨 𝐞 𝐦𝐞𝐮 𝐝𝐨𝐧𝐨 !')
                 pato.modifyChat(from, ChatModification.mute, 24*60*60*1000)
-                reply('*Muteados putos ÙwÚ*')
-                console.log('succes mute chat = ' + from)
+                reply(' 𝐌𝐮𝐭𝐚𝐧𝐝𝐨 𝐜𝐡𝐚𝐭 ')
+                console.log(' 𝐒𝐮𝐜𝐞𝐬𝐬𝐨 𝐜𝐡𝐚𝐭 𝐦𝐮𝐭𝐚𝐝𝐨  = ' + from)
                 break
             case prefix+ 'unmute':
-                if (!isMe) return reply('No eres mi dueño UnU')
+                if (!isMe) return reply(' 𝐕𝐨𝐜𝐞 𝐧𝐚𝐨 𝐞 𝐦𝐞𝐮 𝐝𝐨𝐧𝐨 !')
                 pato.modifyChat(from, ChatModification.unmute)
-                reply('*Ya puedo ver sus webadas UnU*')
-                console.log('succes unmute chat = ' + from)
+                reply('𝐄𝐮 𝐣𝐚 𝐩𝐨𝐬𝐬𝐨 𝐯𝐞𝐫 𝐨 𝐝𝐞𝐥𝐞𝐬 𝐜𝐨𝐧𝐯𝐞𝐫𝐬𝐚𝐬 ')
+                console.log(' 𝐒𝐮𝐜𝐞𝐬𝐬𝐨 𝐧𝐨 𝐛𝐚𝐭𝐞-𝐩𝐚𝐩𝐨 𝐜𝐨𝐦 𝐚𝐮𝐝𝐢𝐨  = ' + from)
                 break
             case prefix+ 'delete':
-                if (!isMe) return reply('No eres mi dueño UnU')
-                reply('*Chats borrados 7n7*')
-                console.log('succes delete chat = ' + from)
+                if (!isMe) return reply(' 𝐕𝐨𝐜𝐞 𝐧𝐚𝐨 𝐞 𝐦𝐞𝐮 𝐝𝐨𝐧𝐨 !')
+                reply(' 𝐁𝐚𝐭𝐞-𝐩𝐚𝐩𝐨𝐬 𝐞𝐱𝐜𝐥𝐮𝐢𝐝𝐨𝐬 ')
+                console.log('𝐒𝐮𝐜𝐞𝐬𝐬𝐨 𝐞𝐱𝐜𝐥𝐮𝐢𝐫 𝐛𝐚𝐭𝐞-𝐩𝐚𝐩𝐨 = ' + from)
                 pato.modifyChat(from, ChatModification.delete)
                 break
 	case prefix+ 'setreply':
 	case prefix+ 'setfake':
-	  if (isMe) return('Especialmente hermano, ¿quién eres??')
+	  if (isMe) return('𝐏𝐫𝐢𝐦𝐞𝐢𝐫𝐚𝐦𝐞𝐧𝐭𝐞 𝐢𝐫𝐦𝐚𝐨, 𝐪𝐮𝐞𝐦 𝐞 𝐯𝐨𝐜𝐞 ?')
 			if (!q) return fakegroup(mess.wrongFormat)
 			fake = q
-			fakegroup(`Succes Mengganti Conversation Fake : ${q}`)
+			fakegroup(` 𝐒𝐮𝐜𝐞𝐬𝐬𝐨 𝐧𝐚 𝐦𝐮𝐝𝐚𝐧ç𝐚 𝐝𝐞 𝐜𝐨𝐧𝐯𝐞𝐫𝐬𝐚 𝐟𝐚𝐥𝐬𝐚 : ${q}`)
 			break
 	case prefix+ 'setfakeimg':
-	  if (isMe) return('No eres mi dueño UnU?')
+	  if (isMe) return(' 𝐕𝐨𝐜𝐞 𝐧𝐚𝐨 𝐞 𝐦𝐞𝐮 𝐝𝐨𝐧𝐨 !')
         	if ((isMedia && !mek.message.videoMessage || isQuotedImage || isQuotedSticker) && args.length == 0) {
           	boij = isQuotedImage || isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 			delb = await pato.downloadMediaMessage(boij)
 			fs.writeFileSync(`./stik/fake.jpeg`, delb)
-			fakestatus('Hecho mi amo 7~7')
+			fakestatus(' 𝐅𝐞𝐢𝐭𝐨 𝐦𝐞𝐮 𝐦𝐞𝐬𝐭𝐫𝐞 ')
         	} else {
-            reply(`Kirim gambar dengan caption ${prefix}sethumb`)
+            reply(` 𝐄𝐧𝐯𝐢𝐞 𝐮𝐦𝐚 𝐟𝐨𝐭𝐨 𝐜𝐨𝐦 𝐮𝐦𝐚 𝐥𝐞𝐠𝐞𝐧𝐝𝐚 ${prefix}sethumb`)
           	}
 			break	
 	case prefix+ 'setprefix':
-	  if (isMe) return('No eres mi dueño UnU?')
+	  if (isMe) return(' 𝐕𝐨𝐜𝐞 𝐧𝐚𝐨 𝐞 𝐦𝐞𝐮 𝐝𝐨𝐧𝐨 !')
 			prefix = q
-			fakegroup(`Succes Mengganti Prefix : ${q}`)
+			fakegroup(` 𝐒𝐮𝐜𝐞𝐬𝐬𝐨 𝐧𝐚 𝐚𝐥𝐭𝐞𝐫𝐚ç𝐚𝐨 𝐝𝐨 𝐩𝐫𝐞𝐟𝐢𝐱𝐨 : ${q}`)
 			break
 	case prefix+ 'setthumb':
-		  if (isMe) return('No eres mi dueño UnU?')
+		  if (isMe) return(' 𝐕𝐨𝐜𝐞 𝐧𝐚𝐨 𝐞 𝐦𝐞𝐮 𝐝𝐨𝐧𝐨 !')
 	        if ((isMedia && !mek.message.videoMessage || isQuotedImage || isQuotedSticker) && args.length == 0) {
           	boij = isQuotedImage || isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 			delb = await pato.downloadMediaMessage(boij)
 			fs.writeFileSync(`./stik/thumb.jpeg`, delb)
-			fakestatus('Hecho mi amo 7~7')
+			fakestatus(' 𝐅𝐞𝐢𝐭𝐨 𝐦𝐞𝐮 𝐦𝐞𝐬𝐭𝐫𝐞 ')
         	} else {
-            reply(`Kirim gambar dengan caption ${prefix}sethumb`)
+            reply(` 𝐄𝐧𝐯𝐢𝐞 𝐮𝐦𝐚 𝐟𝐨𝐭𝐨 𝐜𝐨𝐦 𝐮𝐦𝐚 𝐥𝐞𝐠𝐞𝐧𝐝𝐚  ${prefix}sethumb`)
           	}
 			break	
     case prefix+ 'settarget':
-	  if (isMe) return('No eres mi dueño UnU?')
+	  if (isMe) return(' 𝐕𝐨𝐜𝐞 𝐧𝐚𝐨 𝐞 𝐦𝐞𝐮 𝐝𝐨𝐧𝐨 !')
             if(!q) return reply(`${prefix}settarget 503xxxxx`)
             targetpc = args[0]
-            fakegroup(`Succes Mengganti target fitnahpc : ${targetpc}`)
+            fakegroup(` 𝐒𝐮𝐜𝐞𝐬𝐬𝐨 𝐦𝐮𝐝𝐚𝐧𝐝𝐨 𝐨 𝐚𝐥𝐯𝐨 𝐝𝐚 𝐜𝐚𝐥𝐮𝐧𝐢𝐚: ${targetpc}`)
             break
 case prefix+ 'term':
-if (!isMe) return reply('Solo mi dueño satan UnU')
+if (!isMe) return reply(' 𝐀𝐩𝐞𝐧𝐚𝐬 𝐦𝐞𝐮 𝐌𝐞𝐬𝐭𝐫𝐞')
 			if (!q) return fakegroup(mess.wrongFormat)
 			exec(q, (err, stdout) => {
 			if (err) return fakegroup(`pato@self:~$ ${err}`)
@@ -864,18 +867,18 @@ if (!isMe) return reply('Solo mi dueño satan UnU')
     case prefix+ 'covidindo':
                 ci = await covidindo()
                 var { kasus, kematian, sembuh } = ci[0]
-                reply(`Caso : ${kasus}\n\nMuerto : ${kematian}\n\nHelado : ${sembuh}`)
+                reply(` 𝐂𝐚𝐬𝐨 : ${kasus}\n\n 𝐌𝐨𝐫𝐭𝐨 : ${kematian}\n\n 𝐑𝐞𝐜𝐮𝐩𝐞𝐫𝐚𝐝𝐨𝐬 : ${sembuh}`)
                 break
     case prefix+ 'covidworld':
                  cw= await covidworld()
                 var { kasus, kematian, sembuh } = cw[0]
-                reply(`Casos : ${kasus}\n\nMuertos : ${kematian}\n\nReponerse : ${sembuh}`)
+                reply(` 𝐂𝐚𝐬𝐨 : ${kasus}\n\n 𝐌𝐨𝐫𝐭𝐨 : ${kematian}\n\n 𝐑𝐞𝐜𝐮𝐩𝐞𝐫𝐚𝐝𝐨𝐬 : ${sembuh}`)
                 break
     case prefix+ 'cnn':
                 var result = await cnn()
-                cn = 'CNN NEWS'
+                cn = '𝐂𝐍𝐍 𝐍𝐄𝐖𝐒'
                 for (let i = 0; i < result.length; i++) {
-                  cn += `\n\nTitle : ${result[i].judul}\nLink : ${result[i].link}\nImage: ${result[i].thumb}`
+                  cn += `\n\n 𝐓𝐢𝐭𝐮𝐥𝐨 : ${result[i].judul}\n 𝐋𝐢𝐧𝐤 : ${result[i].link}\n 𝐈𝐦𝐚𝐠𝐞𝐦 : ${result[i].thumb}`
                 }
                 buff = await getBuffer(result[0].thumb)
                 pato.sendMessage(from, buff, MessageType.image, {caption: cn})
@@ -884,7 +887,7 @@ if (!isMe) return reply('Solo mi dueño satan UnU')
                 tres = await Gempa()
                 var { Waktu, Lintang, Bujur, Magnitude, Kedalaman, Wilayah, Map } = tres.result
                 console.log(Map)
-                captt = `Waktu : ${Waktu}\nLintang : ${Lintang}\nBujur : ${Bujur}\nWilayah : ${Wilayah}`
+                captt = ` 𝐓𝐞𝐦𝐩𝐨 : ${Waktu}\n 𝐋𝐚𝐭𝐢𝐭𝐮𝐝𝐞 : ${Lintang}\n 𝐋𝐨𝐧𝐠𝐢𝐭𝐮𝐝𝐞 : ${Bujur}\n 𝐑𝐞𝐠𝐢𝐚𝐨 : ${Wilayah}`
                 thumbbb = await getBuffer(Map)
                 pato.sendMessage(from, thumbbb, MessageType.image, {caption: `${captt}`})
                 break
@@ -897,16 +900,16 @@ if (!isMe) return reply('Solo mi dueño satan UnU')
 			buffqw = await getBuffer(eses.data.screenshot)
 			pato.sendMessage(from, buffqw, image, {quoted: mek})
 			.catch(err => {
-				return('Repitiendo señor hay un errorc...')
+				return(' 𝐑𝐞𝐩𝐞𝐭𝐢𝐧𝐝𝐨 𝐬𝐞𝐧𝐡𝐨𝐫, 𝐡𝐚 𝐮𝐦 𝐞𝐫𝐫𝐨...')
 			})
 			break
     case prefix+ 'revip':
-			if (args.length < 1) return reply('Domain/Ip nya mana bang??')
+			if (args.length < 1) return reply(' 𝐎𝐧𝐝𝐞 𝐞𝐬𝐭𝐚 𝐨 𝐝𝐨𝐦𝐢𝐧𝐢𝐨 / 𝐢𝐩?')
 			var qwery = args.join(' ')
 			var repip = await fetchJson(`https://sonar.omnisint.io/reverse/${qwery}`)
 			pato.sendMessage(from, `${repip}`, text)
       .catch((error) => {
-            reply('Invalid domain/ip'); 
+            reply(' 𝐃𝐨𝐦𝐢𝐧𝐢𝐨 / 𝐢𝐩 𝐢𝐧𝐯𝐚𝐥𝐢𝐝𝐨!'); 
             })
 			break
 //WIBU
@@ -923,9 +926,9 @@ case prefix+ 'avatar':
 		case prefix+ 'waifu':
 			waifud = await axios.get('https://nekos.life/api/v2/img/waifu')
 			nyed = await getBuffer(waifud.data.url)
-			pato.sendMessage(from, nyed, image, { caption: 'Gatau caption nya apa', quoted: mek })
+			pato.sendMessage(from, nyed, image, { caption: ' 𝐍𝐚𝐨 𝐬𝐞𝐢 𝐪𝐮𝐚𝐥 𝐞 𝐚 𝐥𝐞𝐠𝐞𝐧𝐝𝐚 ', quoted: mek })
 			.catch(err => {
-				return('Pwrdon... T_T')
+				return(' 𝐒𝐢𝐧𝐭𝐨 𝐦𝐮𝐢𝐭𝐨!')
 			})
 			break
 	case prefix+ 'husbu':
@@ -933,14 +936,14 @@ case prefix+ 'avatar':
 			sasu = JSON.parse(JSON.stringify(husbud));
 			ke =  sasu[Math.floor(Math.random() * sasu.length)];
 			nye = await getBuffer(ke)
-			pato.sendMessage(from, nye, image, { caption: 'Gatau caption nya apa', quoted: mek })
+			pato.sendMessage(from, nye, image, { caption: ' 𝐍𝐚𝐨 𝐬𝐞𝐢 𝐪𝐮𝐚𝐥 𝐞 𝐚 𝐥𝐞𝐠𝐞𝐧𝐝𝐚 !', quoted: mek })
 			.catch(err => {
-				return('Perdon... T-T')
+				return(' 𝐒𝐢𝐧𝐭𝐨 𝐦𝐮𝐢𝐭𝐨!')
 			})
 			break
 //IMAGE
 case prefix+ 'image':
-            if (args.length < 1) return reply('Ingrese texto!')
+            if (args.length < 1) return reply(' 𝐈𝐧𝐠𝐫𝐞𝐬𝐬𝐞 𝐨 𝐭𝐞𝐱𝐭𝐨!')
             const gimg = args.join('');
             reply(mess.wait)
             gis(gimg, async (error, result) => {
@@ -955,9 +958,9 @@ case prefix+ 'pinterest':
 			sasu = JSON.parse(JSON.stringify(anu));
 			ke =  sasu[Math.floor(Math.random() * sasu.length)];
 			nye = await getBuffer(ke)
-			pato.sendMessage(from, nye, image, { caption: 'SATANCITO ᵈᵃʳʸ⛥', quoted: mek })
+			pato.sendMessage(from, nye, image, { caption: ' ☙𝐊𝐚𝐋𝐢↭𝐋𝐢𝐍𝐮𝐗❧ ', quoted: mek })
 			.catch(err => {
-				return('de nuevo genial? qué estás buscando?')
+				return(' 𝐓𝐞𝐧𝐭𝐞 𝐝𝐞 𝐧𝐨𝐯𝐨! 𝐎 𝐪𝐮𝐞 𝐯𝐨𝐜𝐞 𝐞𝐬𝐭𝐚 𝐛𝐮𝐬𝐜𝐚𝐧𝐝𝐨?')
 			})
 			break
     case prefix+ 'anime':
@@ -984,7 +987,7 @@ case prefix+ 'pinterest':
 			bufwanime = await getBuffer(wanime.data.url)
 			pato.sendMessage(from, bufwanime, image, { quoted: mek })
 			.catch(err => {
-			return('Anuncio con errores de nuevo intente..')
+			return(' 𝐀𝐧𝐮𝐧𝐜𝐢𝐨 𝐜𝐨𝐦 𝐞𝐫𝐫𝐨𝐬, 𝐭𝐞𝐧𝐭𝐞 𝐧𝐨𝐯𝐚𝐦𝐞𝐧𝐭𝐞...')
 			})
 			break
 //HARAM FEATURE
@@ -1397,7 +1400,7 @@ case prefix+ 'holoero':
                 .toFormat('webp')
                 .save(ran)
             } else {
-                reply(`Kirim gambar dengan caption ${prefix}sticker\nDuracion del video de 1-9 segundos`)
+                reply(` 𝐄𝐧𝐯𝐢𝐞 𝐮𝐦𝐚 𝐟𝐨𝐭𝐨 𝐜𝐨𝐦 𝐮𝐦  ${prefix}𝐬𝐭𝐢𝐜𝐤𝐞𝐫\n𝐃𝐮𝐫𝐚ç𝐚𝐨 𝐝𝐨 𝐯𝐢𝐝𝐞𝐨 𝐝𝐞 1-9 𝐬𝐞𝐠𝐮𝐧𝐝𝐨𝐬.`)
             }
             break
 	case prefix+ 'stikerwm':
@@ -1414,7 +1417,7 @@ case prefix+ 'holoero':
             ffmpeg(media)
             .on('error', (e) => {
             console.log(e)
-            pato.sendMessage(from, 'Hay un error', 'Intenta de nuevo', { quoted: mek })
+            pato.sendMessage(from, ' 𝐎𝐜𝐨𝐫𝐫𝐞𝐮 𝐮𝐦 𝐞𝐫𝐫𝐨 ',' 𝐓𝐞𝐧𝐭𝐞 𝐧𝐨𝐯𝐚𝐦𝐞𝐧𝐭𝐞', { quoted: mek })
             fs.unlinkSync(media)
             })
             .on('end', () => {
@@ -1441,7 +1444,7 @@ case prefix+ 'holoero':
             ffmpeg(media)
             .on('error', (e) => {
             console.log(e)
-            pato.sendMessage(from, 'Ocurrió un error ',' conversación', { quoted: mek })
+            pato.sendMessage(from, ' 𝐎𝐜𝐨𝐫𝐫𝐞𝐮 𝐮𝐦 𝐞𝐫𝐫𝐨 ',' 𝐂𝐨𝐧𝐯𝐞𝐫𝐬𝐚𝐨 ', { quoted: mek })
             fs.unlinkSync(media)
             })
             .on('end', () => {
@@ -1458,12 +1461,12 @@ case prefix+ 'holoero':
             .toFormat('webp')
             .save(out)       
             } else {
-            reply(`Kirim gambar dengan caption ${prefix}swm teks|teks atau tag gambar yang sudah dikirim`)
+            reply(` 𝐄𝐧𝐯𝐢𝐞 𝐮𝐦𝐚 𝐟𝐨𝐭𝐨 𝐜𝐨𝐦 𝐮𝐦𝐚 𝐥𝐞𝐠𝐞𝐧𝐝𝐚 ${prefix}swm 𝐭𝐚𝐠𝐬 𝐝𝐞 𝐭𝐞𝐱𝐭𝐨 | 𝐭𝐞𝐱𝐭𝐨 𝐨𝐮 𝐢𝐦𝐚𝐠𝐞𝐦 𝐪𝐮𝐞 𝐟𝐨𝐫𝐚𝐦 𝐞𝐧𝐯𝐢𝐚𝐝𝐚𝐬`)
             }
             break
     case prefix+ 'take':
     case prefix+ 'colong':
-    		if (!isQuotedSticker) return reply('solo pegatinas')
+    		if (!isQuotedSticker) return reply('𝐒𝐨 𝐚𝐝𝐞𝐬𝐢𝐯𝐨𝐬')
             encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 		    media = await pato.downloadAndSaveMediaMessage(encmedia)
             anu = args.join(' ').split('|')
@@ -1478,7 +1481,7 @@ case prefix+ 'holoero':
             var pen = ge.split("|")[1];
             var pn = ge.split("|")[2];
             var be = ge.split("|")[3];
-            const fde = `kirim/reply image dengan capion ${prefix}fdeface link|title|desc|teks`
+            const fde = `𝐄𝐧𝐯𝐢𝐚𝐫 / 𝐫𝐞𝐬𝐩𝐨𝐧𝐝𝐞𝐫 𝐢𝐦𝐚𝐠𝐞𝐦 𝐜𝐨𝐦 𝐥𝐞𝐠𝐞𝐧𝐝𝐚 ${prefix}fdeface 𝐥𝐢𝐧𝐤 | 𝐭𝐢𝐭𝐮𝐥𝐨 | 𝐝𝐞𝐬𝐜 | 𝐭𝐞𝐤𝐬`
             if (args.length < 1) return reply (fde)
             const dipes = isQuotedSticker || isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
             const tipes = await pato.downloadAndSaveMediaMessage(dipes)        
@@ -1498,7 +1501,7 @@ case prefix+ 'holoero':
     		pato.sendMessage(from, mat, MessageType.extendedText, anu)
             break
 case prefix+ 'emoji':
-			if (!q) return fakegroup('emoji UnU?')
+			if (!q) return fakegroup('𝐄𝐦𝐨𝐣𝐢 𝐮𝐦?')
 			qes = args.join(' ')
 			emoji.get(`${qes}`).then(emoji => {
 			teks = `${emoji.images[4].url}`
@@ -1506,11 +1509,11 @@ case prefix+ 'emoji':
     		console.log(teks)
    			})
            .catch((err) => {
-            reply('Ahhh pwrdon T-T no pude'); 
+            reply(' 𝐃𝐞𝐬𝐜𝐮𝐥𝐩𝐞-𝐦𝐞 𝐢𝐬𝐬𝐨 𝐧𝐚𝐨 𝐩𝐨𝐝𝐞!'); 
             })
     		break
 case prefix+ 'attp':
-						if (args.length < 1) return reply(`Text Nya Mana Ajg?\n> *Contoh* : *${prefix}attp* _Aku Ganz_`)
+						if (args.length < 1) return reply(` 𝐎𝐧𝐝𝐞 𝐞𝐬𝐭𝐚 𝐨 𝐭𝐞𝐱𝐭𝐨?\n> 𝐄𝐱𝐞𝐦𝐩𝐥𝐨 : ${prefix}attp  _𝐁𝐨𝐬𝐨𝐧𝐚𝐫𝐨 𝐅𝐢𝐥𝐡𝐨 𝐝𝐚 𝐏𝐮𝐭𝐚_`)
 						attp2 = await getBuffer(`https://api.xteam.xyz/attp?file&text=${body.slice(6)}`)
 						pato.sendMessage(from, attp2, MessageType.sticker, {quoted: mek})
 						break
@@ -1518,14 +1521,14 @@ case prefix+ 'attp':
 //COMINGSOON
 //CONVERTER
     case prefix+ 'toimg':
-			if (!isQuotedSticker) return reply('Responde a un sticker!')
+			if (!isQuotedSticker) return reply(' 𝐑𝐞𝐬𝐩𝐨𝐧𝐝𝐞𝐫 𝐮𝐦 𝐚𝐝𝐞𝐬𝐢𝐯𝐨!')
 			reply(mess.wait)
 			encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
 			media = await pato.downloadAndSaveMediaMessage(encmedia)
 			ran = getRandom('.png')
 			exec(`ffmpeg -i ${media} ${ran}`, (err) => {
 			fs.unlinkSync(media)
-			if (err) return reply('Bueno, falló, inténtalo de nuevo ^_^')
+			if (err) return reply(' 𝐅𝐚𝐥𝐡𝐨𝐮, 𝐭𝐞𝐧𝐭𝐞 𝐧𝐨𝐯𝐚𝐦𝐞𝐧𝐭𝐞!')
 			buffer = fs.readFileSync(ran)
 			fakethumb(buffer,'NIH')
 			fs.unlinkSync(ran)
@@ -1540,12 +1543,12 @@ case prefix+ 'attp':
             sendMediaURL(from,res.result,'Done')
             })
             }else {
-            reply('responde stiker')
+            reply(' 𝐑𝐞𝐬𝐩𝐨𝐧𝐝𝐞𝐫 𝐮𝐦 𝐚𝐝𝐞𝐬𝐢𝐯𝐨')
             }
             fs.unlinkSync(owgi)
             break
     case prefix+ 'tomp3':
-            if (!isQuotedVideo) return fakegroup('Responde video UnU!')
+            if (!isQuotedVideo) return fakegroup(' 𝐑𝐞𝐬𝐩𝐨𝐧𝐝𝐞𝐫 𝐮𝐦 𝐯𝐢𝐝𝐞𝐨!')
             fakegroup(mess.wait)
             encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
             media = await pato.downloadAndSaveMediaMessage(encmedia)
@@ -1559,7 +1562,7 @@ case prefix+ 'attp':
             })
             break
     case prefix+ 'fast':
-            if (!isQuotedVideo) return fakegroup('Reponde video UnU 📸')
+            if (!isQuotedVideo) return fakegroup(' 𝐑𝐞𝐬𝐩𝐨𝐧𝐝𝐞𝐫 𝐮𝐦 𝐯𝐢𝐝𝐞𝐨')
             fakegroup(mess.wait)
             encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
             media = await pato.downloadAndSaveMediaMessage(encmedia)
@@ -1573,7 +1576,7 @@ case prefix+ 'attp':
             })
             break
     case prefix+ 'slow':
-            if (!isQuotedVideo) return fakegroup('Responde video UnU📸!')
+            if (!isQuotedVideo) return fakegroup(' 𝐑𝐞𝐬𝐩𝐨𝐧𝐝𝐞𝐫 𝐮𝐦 𝐯𝐢𝐝𝐞𝐨!')
             fakegroup(mess.wait)
             encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
             media = await pato.downloadAndSaveMediaMessage(encmedia)
@@ -1587,7 +1590,7 @@ case prefix+ 'attp':
             })
             break
     case prefix+ 'reverse':
-            if (!isQuotedVideo) return fakegroup('Reponde video UnU')
+            if (!isQuotedVideo) return fakegroup(' 𝐑𝐞𝐬𝐩𝐨𝐧𝐝𝐞𝐫 𝐮𝐦 𝐯𝐢𝐝𝐞𝐨!')
             encmedia = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
             media = await pato.downloadAndSaveMediaMessage(encmedia)
             ran = getRandom('.mp4')
@@ -1606,12 +1609,12 @@ case prefix+ 'attp':
             res = await upload(owgi)
             reply(res)
             } else {
-            reply('Responde video o imagen nwn')
+            reply(' 𝐑𝐞𝐬𝐩𝐨𝐧𝐝𝐞 𝐯𝐢𝐝𝐞𝐨 𝐨𝐮 𝐢𝐦𝐚𝐠𝐞𝐦.')
             }
             break
 //Upload Story WeA
     case prefix+ 'upswteks':
-            if (!q) return fakestatus('El texto? ._.')
+            if (!q) return fakestatus('𝐎 𝐭𝐞𝐱𝐭𝐨? ._.')
             pato.sendMessage('status@broadcast', `${q}`, extendedText)
             fakegroup(`Sukses Up story wea teks ${q}`)
             break
@@ -1634,11 +1637,11 @@ case prefix+ 'attp':
             bur = `Sukses Upload Story Video dengan Caption: ${q}`
             pato.sendMessage(from, bur, text, { quoted: mek })
             } else {
-            fakestatus('reponde video UnU!')
+            fakestatus(' 𝐑𝐞𝐬𝐩𝐨𝐧𝐝𝐞𝐫 𝐮𝐦 𝐯𝐢𝐝𝐞𝐨!')
             }
             break
 			case prefix+ 'fitnah':
-            if (args.length < 1) return reply(`Usage :\n${prefix}fitnah [@tag|pesan|balasanbot]]\n\nEx : \n${prefix}fitnah @tagmember|Hola|Hola juga`)
+            if (args.length < 1) return reply(` 𝐔𝐬𝐨 :\n${prefix}𝐜𝐚𝐥𝐮𝐧𝐢𝐚 [@𝐭𝐚𝐠||𝐦𝐞𝐧𝐬𝐚𝐠𝐞𝐦||𝐫𝐞𝐩𝐥𝐲𝐛𝐨𝐭]]\n\nEx : \n${prefix}𝐜𝐚𝐥𝐮𝐧𝐢𝐚 @𝐭𝐚𝐠𝐦𝐞𝐦𝐛𝐞𝐫||𝐎𝐥𝐚|𝐎𝐥𝐚𝐭𝐚𝐦𝐛𝐞𝐦`)
             var gh = args.join(' ')
             mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
             var replace = gh.split("|")[0];
@@ -1646,10 +1649,15 @@ case prefix+ 'attp':
             var bot = gh.split("|")[2];
             pato.sendMessage(from, `${bot}`, text, {quoted: { key: { fromMe: false, participant: `${mentioned}`, ...(from ? { remoteJid: from } : {}) }, message: { conversation: `${target}` }}})
             break
+            case 'dono':
+            memein = await kagApi.memeindo()
+            buffer = await getBuffer(`https://i.ibb.co/FWJYx2v/HCBR-PRo.png`)
+            client.sendMessage(from, buffer, image, {quoted: mek, caption: '\nㅤㅤ𝐂𝐫𝐢𝐚𝐝𝐨𝐫ㅤᵏᵃˡⁱˡⁱⁿᵘˣ\nㅤㅤ𝐘𝐨𝐮𝐓𝐮𝐛𝐞ㅤhttps://bit.ly/3v0brKy\nㅤㅤ𝐖𝐡𝐚𝐭𝐬ㅤwa.me/+5521981449242\nㅤㅤ𝐈𝐧𝐬𝐭𝐚ㅤ@kαliliиυxdiรтяσ\n\n\nㅤㅤㅤㅤㅤ↶»𝘉𝘰𝘛⇝☠⇜𝘏𝘊𝘉𝘙«↷ㅤ'})
+            break
 //MOBIL LEJEN
 case prefix+ 'herolist':
 await herolist().then((ress) => {
-let listt = `*List hero untuk feature ${prefix}herodetail*\n\n`
+let listt = ` 𝐋𝐢𝐬𝐭𝐚 𝐝𝐞 𝐡𝐞𝐫𝐨𝐢𝐬 𝐩𝐚𝐫𝐚 𝐫𝐞𝐜𝐮𝐫𝐬𝐨𝐬 ${prefix}𝐝𝐞𝐭𝐚𝐥𝐡𝐞 𝐝𝐨 𝐡𝐞𝐫𝐨𝐢\n\n`
 for (var i = 0; i < ress.hero.length; i++) {
 listt += '-  ' + ress.hero[i] + '\n'
 }
@@ -1689,7 +1697,7 @@ faketokoforwaded(her)
 break
 //Downloader
 	case prefix+ 'play':
-			if (args.length === 0) return reply(`Kirim perintah *${prefix}play* _Judul lagu yang akan dicari_`)
+			if (args.length === 0) return reply(` 𝐄𝐧𝐯𝐢𝐞 𝐨 𝐜𝐨𝐦𝐚𝐧𝐝𝐨${prefix}play _𝐎 𝐭𝐢𝐭𝐮𝐥𝐨 𝐝𝐚 𝐦𝐮𝐬𝐢𝐜𝐚 𝐚 𝐬𝐞𝐫 𝐩𝐞𝐬𝐪𝐮𝐢𝐬𝐚𝐝𝐚_`)
             var srch = args.join('')
     		aramas = await yts(srch);
     		aramat = aramas.all 
@@ -1700,8 +1708,8 @@ break
                         const { dl_link, thumb, title, filesizeF, filesize } = res
                         axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
                         .then(async (a) => {
-                        if (Number(filesize) >= 100000) return sendMediaURL(from, thumb, `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Untuk durasi lebih dari batas disajikan dalam mektuk link_`)
-                        const captions = `*PLAY MUSIC*\n\n*Title* : ${title}\n*Ext* : MP3\n*Size* : ${filesizeF}\n*Link* : ${a.data}\n\n_Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
+                        if (Number(filesize) >= 100000) return sendMediaURL(from, thumb, `ㅤㅤㅤㅤ♬⇜ℙ𝕝𝕒𝕪↭𝕄𝕦𝕤𝕚𝕔𝕒⇝♫\n\nㅤㅤ𝕋𝕚𝕥𝕝𝕖⇝ ${title}\nㅤㅤ𝔽𝕠𝕣𝕞𝕒𝕥𝕠⇝ MP3\nㅤㅤ𝕋𝕒𝕞𝕒𝕟𝕙𝕠 𝕕𝕠 𝕒𝕣𝕢𝕦𝕚𝕧𝕠⇝ ${filesizeF}\nㅤㅤLink⇝ ${a.data}\n\nㅤㅤ_ᵖᵃʳᵃ ᵈᵘʳᵃᶜᵒᵉˢ ˢᵘᵖᵉʳⁱᵒʳᵉˢ ᵃᵒ ˡⁱᵐⁱᵗᵉ ˢᵃᵒ ᵃᵖʳᵉˢᵉⁿᵗᵃᵈᵃˢ ⁿᵒ ˡⁱⁿᵏ ᵐᵉᵏᵗᵘᵏ_`)
+                        const captions = `ㅤㅤㅤㅤ♬⇜ℙ𝕝𝕒𝕪↭𝕄𝕦𝕤𝕚𝕔𝕒⇝♫\n\nㅤㅤ𝕋𝕚𝕥𝕝𝕖⇝ ${title}\nㅤㅤ𝔽𝕠𝕣𝕞𝕒𝕥𝕠⇝ MP3\nㅤㅤ𝕋𝕒𝕞𝕒𝕟𝕙𝕠 𝕕𝕠 𝕒𝕣𝕢𝕦𝕚𝕧𝕠⇝ ${filesizeF}\nㅤㅤLink⇝ ${a.data}\n\nㅤㅤ_ᵖᵒʳ ᶠᵃᵛᵒʳ, ᵃᵍᵘᵃʳᵈᵉ ᵒ ᵉⁿᵛⁱᵒ ᵈᵒ ᵃʳˤᵘⁱᵛᵒ ᵈᵉ ᵐⁱᵈⁱᵃ; ⁱˢˢᵒ ᵖᵒᵈᵉ ˡᵉᵛᵃʳ ᵃˡᵍᵘⁿˢ ᵐⁱⁿᵘᵗᵒˢ_`
                         sendMediaURL(from, thumb, captions)
                         await sendMediaURL(from, dl_link).catch(() => reply('error'))
                         })                
@@ -1711,7 +1719,7 @@ break
                         }
                    break  
         case prefix+ 'video':
-            if (args.length === 0) return reply(`Kirim perintah *${prefix}video* _Judul lagu yang akan dicari_`)
+            if (args.length === 0) return reply(` 𝐄𝐧𝐯𝐢𝐚𝐫 𝐜𝐨𝐦𝐚𝐧𝐝𝐨 ${prefix}video _𝐎 𝐭𝐢𝐭𝐮𝐥𝐨 𝐝𝐚 𝐦𝐮𝐬𝐢𝐜𝐚 𝐚 𝐬𝐞𝐫 𝐩𝐞𝐬𝐪𝐮𝐢𝐬𝐚𝐝𝐚_`)
             var srch = args.join('')
             aramas = await yts(srch);
             aramat = aramas.all 
@@ -1722,8 +1730,8 @@ break
                         const { dl_link, thumb, title, filesizeF, filesize } = res
                         axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
                         .then(async (a) => {
-                        if (Number(filesize) >= 100000) return sendMediaURL(from, thumb, `*PLAY VIDEO*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Untuk durasi lebih dari batas disajikan dalam mektuk link_`)
-                        const captions = `*PLAY VIDEO*\n\n*Title* : ${title}\n*Ext* : MP4\n*Size* : ${filesizeF}\n*Link* : ${a.data}\n\n_Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_`
+                        if (Number(filesize) >= 100000) return sendMediaURL(from, thumb, `ㅤㅤㅤㅤ𝐏𝐋𝐀𝐘 𝐕𝐈𝐃𝐄𝐎 ▶\n\nㅤㅤ𝐓𝐢𝐭𝐮𝐥𝐨⇝ ${title}\nㅤㅤ𝔽𝕠𝕣𝕞𝕒𝕥𝕠⇝ MP3\nㅤㅤ𝕋𝕒𝕞𝕒𝕟𝕙𝕠 𝕕𝕠 𝕒𝕣𝕢𝕦𝕚𝕧𝕠⇝ ${filesizeF}\nㅤㅤLink⇝ ${a.data}\n\nㅤㅤ_ᵖᵃʳᵃ ᵈᵘʳᵃᶜᵒᵉˢ ˢᵘᵖᵉʳⁱᵒʳᵉˢ ᵃᵒ ˡⁱᵐⁱᵗᵉ ˢᵃᵒ ᵃᵖʳᵉˢᵉⁿᵗᵃᵈᵃˢ ⁿᵒ ˡⁱⁿᵏ ᵐᵉᵏᵗᵘᵏ_`)
+                        const captions = `ㅤㅤㅤㅤ𝐏𝐋𝐀𝐘 𝐕𝐈𝐃𝐄𝐎 ▶\n\nㅤㅤ𝐓𝐢𝐭𝐮𝐥𝐨⇝ ${title}\nㅤㅤ𝔽𝕠𝕣𝕞𝕒𝕥𝕠⇝ MP4\nㅤㅤ𝕋𝕒𝕞𝕒𝕟𝕙𝕠 𝕕𝕠 𝕒𝕣𝕢𝕦𝕚𝕧𝕠⇝ ${filesizeF}\nㅤㅤLink⇝ ${a.data}\n\nㅤㅤ_ᵖᵒʳ ᶠᵃᵛᵒʳ, ᵃᵍᵘᵃʳᵈᵉ ᵒ ᵉⁿᵛⁱᵒ ᵈᵒ ᵃʳˤᵘⁱᵛᵒ ᵈᵉ ᵐⁱᵈⁱᵃ; ⁱˢˢᵒ ᵖᵒᵈᵉ ˡᵉᵛᵃʳ ᵃˡᵍᵘⁿˢ ᵐⁱⁿᵘᵗᵒˢ_`
                         sendMediaURL(from, thumb, captions)
                         await sendMediaURL(from, dl_link).catch(() => reply('error'))
                         })                
@@ -1733,7 +1741,7 @@ break
                         }
                    break
 	case prefix+ 'ytmp3':
-			if (args.length === 0) return reply(`Enviar pedido *${prefix}ytmp3 [linkYt]*`)
+			if (args.length === 0) return reply(`𝐄𝐧𝐯𝐢𝐚𝐫 𝐩𝐞𝐝𝐢𝐝𝐨 ${prefix}ytmp3 [𝐥𝐢𝐧𝐤𝐘𝐓]`)
 			let isLinks = args[0].match(/(?:https?:\/{2})?(?:w{3}\.)?youtu(?:be)?\.(?:com|be)(?:\/watch\?v=|\/)([^\s&]+)/)
 			if (!isLinks) return reply(mess.error.Iv)
 				try {
@@ -1743,8 +1751,8 @@ break
 				const { dl_link, thumb, title, filesizeF, filesize } = res
 				axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
 				.then((a) => {
-			    if (Number(filesize) >= 30000) return sendMediaURL(from, thumb, `*Datos obtenidos con éxito!*\n\n*Titulo* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Para duraciones superiores al límite se presentan en el enlace_`)
-				const captions = `*YTMP3*\n\n*Title* : ${title}\n*Ext* : MP3\n*Size* : ${filesizeF}\n\n_Ten paciencia, estoy enviando el archivo T~T_`
+			    if (Number(filesize) >= 30000) return sendMediaURL(from, thumb, `𝐃𝐚𝐝𝐨𝐬 𝐨𝐛𝐭𝐢𝐝𝐨𝐬 𝐜𝐨𝐦 𝐬𝐮𝐜𝐞𝐬𝐬𝐨!\n\nㅤㅤ𝐓𝐢𝐭𝐮𝐥𝐨⇝  ${title}\nㅤㅤ𝔽𝕠𝕣𝕞𝕒𝕥𝕠⇝ MP3\nㅤㅤ𝕋𝕒𝕞𝕒𝕟𝕙𝕠 𝕕𝕠 𝕒𝕣𝕢𝕦𝕚𝕧𝕠⇝ ${filesizeF}\nㅤㅤLink⇝ ${a.data}\n\nㅤㅤ_ᵖᵃʳᵃ ᵈᵘʳᵃᶜᵒᵉˢ ˢᵘᵖᵉʳⁱᵒʳᵉˢ ᵃᵒ ˡⁱᵐⁱᵗᵉ ˢᵃᵒ ᵃᵖʳᵉˢᵉⁿᵗᵃᵈᵃˢ ⁿᵒ ˡⁱⁿᵏ ᵐᵉᵏᵗᵘᵏ_`)
+				const captions = `YTMP3\n\nㅤㅤ𝐓𝐢𝐭𝐮𝐥𝐨⇝  ${title}\nㅤㅤ𝔽𝕠𝕣𝕞𝕒𝕥𝕠⇝ MP3\nㅤㅤ𝕋𝕒𝕞𝕒𝕟𝕙𝕠 𝕕𝕠 𝕒𝕣𝕢𝕦𝕚𝕧𝕠⇝ ${filesizeF}\n\n 𝐒𝐞𝐣𝐚 𝐩𝐚𝐜𝐢𝐞𝐧𝐭𝐞, 𝐞𝐬𝐭𝐨𝐮 𝐞𝐧𝐯𝐢𝐚𝐧𝐝𝐨 𝐨 𝐚𝐫𝐪𝐮𝐢𝐯𝐨!`
 				sendMediaURL(from, thumb, captions)
 				sendMediaURL(from, dl_link).catch(() => reply(mess.error.api))
 				})
@@ -1754,7 +1762,7 @@ break
 				}
 				break
  		case prefix+ 'ytmp4':
-			if (args.length === 0) return reply(`Enviar *${prefix}ytmp4 [linkYt]*`)
+			if (args.length === 0) return reply(`𝐄𝐧𝐯𝐢𝐚𝐫 𝐩𝐞𝐝𝐢𝐝𝐨 ${prefix}ytmp4 [𝐥𝐢𝐧𝐤𝐘𝐓]`)
 			let isLinks2 = args[0].match(/(?:https?:\/{2})?(?:w{3}\.)?youtu(?:be)?\.(?:com|be)(?:\/watch\?v=|\/)([^\s&]+)/)
 			if (!isLinks2) return reply(mess.error.Iv)
 				try {
@@ -1764,8 +1772,8 @@ break
 				const { dl_link, thumb, title, filesizeF, filesize } = res
 				axios.get(`https://tinyurl.com/api-create.php?url=${dl_link}`)
 				.then((a) => {
-				if (Number(filesize) >= 40000) return sendMediaURL(from, thumb, `*YTMP 4!*\n\n*Title* : ${title}\n*Ext* : MP3\n*Filesize* : ${filesizeF}\n*Link* : ${a.data}\n\n_Untuk durasi lebih dari batas disajikan dalam mektuk link_`)
-				const captionsYtmp4 = `*Archivo encontrado!*\n\n*Title* : ${title}\n*Ext* : MP4\n*Size* : ${filesizeF}\n\n_Ten paciencia, estoy enviando el archivo T~T_`
+				if (Number(filesize) >= 40000) return sendMediaURL(from, thumb, `YTMP 4!\n\nㅤㅤ𝐓𝐢𝐭𝐮𝐥𝐨⇝  ${title}\nㅤㅤ𝔽𝕠𝕣𝕞𝕒𝕥𝕠⇝ MP3\nㅤㅤ𝕋𝕒𝕞𝕒𝕟𝕙𝕠 𝕕𝕠 𝕒𝕣𝕢𝕦𝕚𝕧𝕠⇝ ${filesizeF}\nㅤㅤLink⇝ ${a.data}\n\nㅤㅤ_ᵖᵃʳᵃ ᵈᵘʳᵃᶜᵒᵉˢ ˢᵘᵖᵉʳⁱᵒʳᵉˢ ᵃᵒ ˡⁱᵐⁱᵗᵉ ˢᵃᵒ ᵃᵖʳᵉˢᵉⁿᵗᵃᵈᵃˢ ⁿᵒ ˡⁱⁿᵏ ᵐᵉᵏᵗᵘᵏ_`)
+				const captionsYtmp4 = `𝐀𝐫𝐪𝐮𝐢𝐯𝐨 𝐞𝐧𝐜𝐨𝐧𝐭𝐫𝐚𝐝𝐨!\n\nㅤㅤ𝐓𝐢𝐭𝐮𝐥𝐨⇝  ${title}\nㅤㅤ𝔽𝕠𝕣𝕞𝕒𝕥𝕠⇝ MP4\nㅤㅤ𝕋𝕒𝕞𝕒𝕟𝕙𝕠 𝕕𝕠 𝕒𝕣𝕢𝕦𝕚𝕧𝕠⇝ ${filesizeF}\n\n 𝐒𝐞𝐣𝐚 𝐩𝐚𝐜𝐢𝐞𝐧𝐭𝐞, 𝐞𝐬𝐭𝐨𝐮 𝐞𝐧𝐯𝐢𝐚𝐧𝐝𝐨 𝐨 𝐚𝐫𝐪𝐮𝐢𝐯𝐨!`
 				sendMediaURL(from, thumb, captionsYtmp4)
 				sendMediaURL(from, dl_link).catch(() => reply(mess.error.api))
 				})		
@@ -1775,7 +1783,7 @@ break
 				}
 				break
 	case prefix+ 'ytsearch':
-			if (args.length < 1) return reply('Que buscare? O.O')
+			if (args.length < 1) return reply(' 𝐎 𝐪𝐮𝐞 𝐯𝐨𝐮 𝐩𝐫𝐨𝐜𝐮𝐫𝐚𝐫?')
 			var srch = args.join('');
 			try {
         	var aramas = await yts(srch);
@@ -1785,15 +1793,15 @@ break
     		aramat = aramas.all 
     		var tbuff = await getBuffer(aramat[0].image)
     		var ytresult = '';
-    		ytresult += '「 *YOUTUBE SEARCH* 」'
+    		ytresult += '「 𝐏𝐄𝐒𝐐𝐔𝐈𝐒𝐀 𝐍𝐎 𝐘𝐎𝐔𝐓𝐔𝐁𝐄 」'
     		ytresult += '\n________________________\n\n'
    			aramas.all.map((video) => {
         	ytresult += '❏ Title: ' + video.title + '\n'
             ytresult += '❏ Link: ' + video.url + '\n'
-            ytresult += '❏ Duracion: ' + video.timestamp + '\n'
+            ytresult += '❏ 𝐃𝐮𝐫𝐚ç𝐚𝐨: ' + video.timestamp + '\n'
             ytresult += '❏ Subida: ' + video.ago + '\n________________________\n\n'
     		});
-    		ytresult += '◩ *SATANCITO ᵈᵃʳʸ⛥*'
+    		ytresult += '☙𝐊𝐚𝐋𝐢↭𝐋𝐢𝐍𝐮𝐗❧'
     		await fakethumb(tbuff,ytresult)
 			break
     case 'ig':
@@ -1814,7 +1822,7 @@ break
 	    })
 	    break
     case prefix+ 'igstalk':
-            if (!q) return fakegroup('Usernamenya?')
+            if (!q) return fakegroup('𝐍𝐨𝐦𝐞 𝐝𝐨 𝐮𝐬𝐮𝐚𝐫𝐢𝐨!')
             ig.fetchUser(`${args.join(' ')}`).then(Y => {
             console.log(`${args.join(' ')}`)
             ten = `${Y.profile_pic_url_hd}`
